@@ -6,11 +6,13 @@
     box-sizing: border-box;
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
+    
     /* scroll-padding-top: 20px; */
     scrollbar-width: none;
+    /* background-color: rgb(0, 0, 0); */
 }
 #wrapper{
-    height: 100vh;
+    height: 100%;
     /* width: 100vh; */
     overflow-y: auto;
     overflow-x: hidden;
@@ -18,8 +20,8 @@
     
 }
 .container{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
     margin-bottom: 15px;
     
     /* background-color: #302f2f87; */
@@ -29,7 +31,7 @@
     
 }
 .navbar{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +72,11 @@ width: 70px;
     text-decoration: none;
     color:aliceblue;
 }
-.navitem div:hover{
+.navitem div a:hover{
     transition: 0.5s;
     font-weight: bold;
-    text-shadow: 0 0 1px rgb(9, 27, 223);
+    color: #00ffff;
+    text-shadow: 0 0 1px  #00ffff;
 }
 .hero-section{
     width: 80%;
@@ -109,7 +112,7 @@ width: 70px;
     font-weight: 300;
 }
 .role{
-    color: #4334eb;
+    color: #37e1ff;
     font-weight: 800;
 }
 .hero-section-sub-heading{
@@ -188,7 +191,7 @@ width: 70px;
     position: fixed;
    
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
     /* opacity: 0.9; */
@@ -208,8 +211,9 @@ width: 70px;
     justify-content: center;
     align-items: center;
     padding-top: 3%;
-
-    /* background-color: rgb(74, 71, 71); */
+    
+    /* background-color: linear-gradient(rgb(49, 48, 48),#000000); */
+    
 }
 .skills{
     width: 1100px;
@@ -234,11 +238,13 @@ width: 70px;
     font-family: "Playwrite IN", serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    color: rgba(240, 248, 255, 0.598);
+    color: #00ffff;
     padding-bottom: 10px;
     text-shadow: 0 0 5px #706e6e;
 }
-
+.card h3:hover{
+    cursor: pointer;
+}
 .card div{
     color: aliceblue;
     font-size: 1.1rem;
@@ -415,11 +421,75 @@ width: 70px;
     transition-delay: 0.25s;
 }
 
-@media(max-width: 900px){
+@media(max-width: 700px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Be Vietnam Pro", sans-serif;
+        scroll-behavior: smooth;
+        /* scroll-padding-top: 20px; */
+        scrollbar-width: none;
+        /* background-color: rgb(0, 0, 0); */
+    }
+    
+    .hero-section{
+        margin: auto;
+        width: 100%;
+        margin-left: 10%;
+        padding-right: 15%;
+        height: 100%;
+        margin-bottom: 100px;
+        /* padding: 50px 20px; */
+        /* padding-bottom: 00px; */
+    }
+    .navbar{
+        display: block;
+        width: 100vh;
+        font-size: 1rem;
+    }
+    #wrapper{
+        width: 700px;
+        height: auto;
+        margin: 0 auto;
+    }
+    /* ////////////////////// */
+    .about{
+        display: flex;
+        justify-content: center;
+        margin: auto 10%;
+        width: 100vh;
+        height: 100;
+        /* margin: 10px; */
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+    .skills{
+        margin: 0;
+        
+    }
+    /* .skill-title{
+        margin-top: 50px;
+        left: 20px;
+        top: 0px;
+    } */
+
+    /* /////////////// */
+    .projects{
+        /* top: -50px; */
+        width: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .container-pro{
+        width: 100%;
+        /* margin: auto; */
+        margin-left: 10%;
+    }
     .slider{
         position: absolute;
         inset:  40px 40px 200px 40px;
-
+        width: 100%;
     }
     .slider .slides{
         width: 100px;
@@ -454,6 +524,12 @@ width: 70px;
     .slider .slides:nth-child(9){
         left: 620px;
     }
+
+    /* ////////// */
+
+   .warraper-cer{
+    width: 700px;
+   }
 }
 
 /* Certificates */
@@ -461,7 +537,7 @@ width: 70px;
 .certificates{
     
     width: 100%;
-    position: relative;
+    position: absolute;
     
     margin: auto;
     /* padding: 0 auto; */
@@ -499,13 +575,14 @@ width: 70px;
     flex-wrap: wrap;
     padding: 50px;
 }
-.warraper-cer h1{
+.warraper-cer .figcaption{
+    
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-family: Papyrus, fantasy; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 1000; line-height: 26.4px;
-    text-shadow: 3px 3px 6px white;
-    color: rgb(44, 200, 211);
+    /* margin-top: 40px; */
+    /* margin-bottom: 10px; */
+    font-family: Papyrus, fantasy; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 1000; /*line-height: 26.4px;*/
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    color: #00ffff;
 }
 .container-cer .box{
     position: relative;
@@ -533,29 +610,31 @@ width: 70px;
     filter: drop-shadow(0 0 10px rgb(247, 239, 239));
     transition: 0.4s;
     z-index: 1000;
+    
 }
 .container-cer .box figcaption{
     position: absolute;
     width: fit-content;
     height: 16%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.693) 0%, rgba(255, 255, 255, 0.173) 100% );
-    color: rgb(10, 29, 103);
+    
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.693) 0%, rgba(255, 255, 255, 0.173) 100% ); */
+    color: #00ffff;
     opacity: 0%;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
-    padding: 25px;
+    /* padding: 30px; */
     display: flex;
     align-items: end;
 }
 #aws{
-    background: linear-gradient(0deg, rgba(75, 73, 73, 0.693) 0%, rgba(36, 35, 35, 0.173) 100% );
-    color: rgb(181, 190, 209);
+    /* background: linear-gradient(0deg, rgba(75, 73, 73, 0.693) 0%, rgba(36, 35, 35, 0.173) 100% );
+    color: rgb(181, 190, 209); */
 }
 .box:hover figcaption{
     opacity: 1;
     /* bottom: 40%; */
-    transform: translateY(-50%) rotate(360deg);
+    transform: translateY(-50%) ;
     transition: 1s;
 }
 
@@ -569,4 +648,36 @@ width: 70px;
     /* z-index: 1000;
      */
      transform: translateY(-50px); 
+}
+@media (max-width: 900px) {
+    .certificates{
+        margin: 0 auto;
+        padding: o;
+        width: 700px;
+    }
+    .warraper-cer{
+        width: 100%;
+        /* margin: auto; */
+        margin-left: 10%;
+        /* width: 100vh; */
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .container-cer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-cer .box{
+        width: 500px;
+        height: 360px;
+    }
+    .cer-title{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.contact{
+    position: absolute;
 }
