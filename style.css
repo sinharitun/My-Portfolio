@@ -140,6 +140,10 @@ width: 70px;
         position: relative;
         z-index: 1;     
 }
+.a-hire{
+    padding: 0;
+    width: fit-content;
+}
 .btn::before {
 
     content: "";   
