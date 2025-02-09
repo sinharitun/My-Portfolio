@@ -26,7 +26,8 @@
     box-shadow: 0 0 50px #00ffff;
     display: flex;
     flex-direction: row;
-    
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .left-section{
     width: 50%;
@@ -46,6 +47,11 @@ h1{
 }
 .discription .about-dis{
     text-shadow: 0 0 2px #000000;
+}
+@media (max-width: 980px){
+    .img-box img{
+        height: 150px;
+    }
 }
 .img-box{
     margin-top: 10px;
