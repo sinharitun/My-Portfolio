@@ -431,7 +431,8 @@ width: 70px;
         scroll-behavior: smooth;
         /* scroll-padding-top: 20px; */
         scrollbar-width: none;
-        /* background-color: rgb(0, 0, 0); */
+        /* backgr
+        ound-color: rgb(0, 0, 0); */
     }
     
     .hero-section{
@@ -640,7 +641,7 @@ width: 70px;
 .container-cer .box{
     position: relative;
     margin: 10px;
-    width: 31%;
+    width: 30%;
     height: 200px;
     overflow: hidden;
     border-radius: 20px;

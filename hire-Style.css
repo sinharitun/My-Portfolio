@@ -188,3 +188,34 @@ h1{
         padding-top: 100px;
     }
 }
+
+@media(max-width: 500px)  {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 250vh;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .img-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .button-64{
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .about-dis{
+        margin-top: 10px;
+    }
+    .right-section{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
